@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        
+        .feedback-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        
+        .feedback-form h2 {
+            margin-bottom: 20px;
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .feedback-form input, .feedback-form textarea, .feedback-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .feedback-form button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback-form">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name (optional)</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+            
+            <label for="questions">Any Questions regarding product or service</label>
+            <textarea id="questions" name="questions" rows="4" required></textarea>
+            
+            <label for="comments">Additional comments (optional)</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
